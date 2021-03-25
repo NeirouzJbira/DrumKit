@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- my CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="drum-favicon.png" />
+    <title>Drum kit</title>
+  </head>
+  <body>
+    <section class="kit-container">
+      <h3>Drum Kit</h3>
+      <p>Click on the blocks or press the keyboard keys to play the sound.</p>
+      <div class="kit">
+        <div>
+          <div data-key="65" class="instrument crash-cymbal">
+            <kbd>A</kbd>Crash Cymbal
+          </div>
+          <div data-key="83" class="instrument small-tomtom">
+            <kbd>S</kbd>Small Tomtom
+          </div>
+          <div data-key="68" class="instrument large-tomtom">
+            <kbd>D</kbd>Large Tomtom
+          </div>
+          <div data-key="70" class="instrument ride-cymbal">
+            <kbd>F</kbd>Ride Cymbal
+          </div>
+        </div>
+        <div>
+          <div data-key="86" class="instrument hi-hat"><kbd>V</kbd>Hi Hat</div>
+          <div data-key="66" class="instrument snare-drum">
+            <kbd>B</kbd>Snare Drum
+          </div>
+          <div data-key="78" class="instrument bass-drum">
+            <kbd>N</kbd>Bass Drum
+          </div>
+          <div data-key="77" class="instrument floor-tom">
+            <kbd>M</kbd>Floor Tom
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sounds -->
+    <audio data-key="65" src="sounds/crash-single-hit-a-key-02.wav"></audio>
+    <audio
+      data-key="83"
+      src="sounds/low-tom-drum-single-hit-c-key-13.wav"
+    ></audio>
+    <audio data-key="68" src="sounds/hi-tom-key-05.wav"></audio>
+    <audio data-key="70" src="sounds/ride-sample-b-key-07.wav"></audio>
+    <audio data-key="86" src="sounds/hi-hat-key-02.wav"></audio>
+    <audio data-key="66" src="sounds/snare-drum-sound-a-key-01.wav"></audio>
+    <audio data-key="78" src="sounds/bass-drum-key-103.wav"></audio>
+    <audio data-key="77" src="sounds/floor-tom-key-13.wav"></audio>
+    <!-- my script -->
+    <script src="main.js"></script>
+  </body>
+</html>
